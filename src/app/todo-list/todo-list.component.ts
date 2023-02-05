@@ -7,10 +7,7 @@ import { TodoItem } from './todo-item';
   styleUrls: ['./todo-list.component.sass']
 })
 export class TodoListComponent {
-  tasks: TodoItem[] = [
-    {description: 'Arrumar a cama', done: false}, 
-    {description: 'Fazer o trabalho prático do Bootcamp', done: false}
-  ];
+  tasks: TodoItem[] = [];
 
   addTask(description: string) {
     this.tasks.push({
