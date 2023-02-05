@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  exibir: boolean = true;
-  toggleShow() {
-    this.exibir = !this.exibir;
-  }
+  
 }
