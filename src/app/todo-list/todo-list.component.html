@@ -1,1 +1,6 @@
-<p *ngFor="let task of tasks">{{ task }}</p>
+<table>
+    <tr *ngFor="let task of tasks">
+        <td><input type="checkbox" [checked]="task.done" /></td>
+        <td>{{ task.description }}</td>
+    </tr>
+</table>

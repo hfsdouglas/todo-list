@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoItem } from './todo-item';
 
 @Component({
   selector: 'app-todo-list',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-list.component.sass']
 })
 export class TodoListComponent {
-  tasks: string[] = [
-    'Arrumar a cama', 
-    'Fazer o trabalho prático do Bootcamp'
+  tasks: TodoItem[] = [
+    {description: 'Arrumar a cama', done: false}, 
+    {description: 'Fazer o trabalho prático do Bootcamp', done: false}
   ];
 }
