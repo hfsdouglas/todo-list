@@ -11,4 +11,15 @@ export class TodoListComponent {
     {description: 'Arrumar a cama', done: false}, 
     {description: 'Fazer o trabalho prático do Bootcamp', done: false}
   ];
+
+  addTask(description: string) {
+    this.tasks.push({
+      description: description,
+      done: false
+    });
+  }
+
+  deleteTask(i: number) {
+    this.tasks.splice(i, 1);
+  }
 }
